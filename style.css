@@ -1,0 +1,130 @@
+*{
+    margin: 0;    /*ALTERA A MARGEM */
+    padding: 0;    /*distancia o conteúdo de suas bordas */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /*altura da linha*/
+    background-color: #f9f9f9;  /*altera a cor de fundo*/
+}
+nav{
+    position: fixed; /*fixa a barra de navegação*/
+    top: 0; /*????*/
+    width: 100%;  /*aumenta o tamanho da barra de navegação*/
+    background-color: #222222a1; /*altera a cor da barra de navegação do site*/
+    padding: 20px 0; 
+}
+
+nav ul{
+    list-style-type: none; /* tirar estilo da lista, marcador*/
+    display: flex; /*ajusta a proporção da barra*/
+    justify-content: center; /*centraliza o conteúdo da barra*/
+}
+
+nav ul li{
+    margin: 0 20px; /*separa o saiba mais das margens*/
+
+}
+nav ul li a{
+    color: white; /*muda a cor do conteúdo da barra*/
+    text-decoration: none; /*????????*/
+    font-size: 18px; /*tamanho das fontes*/
+    padding: 10px;   /*distância entre o conteúdo e as bordas*/
+    transition: color 0.3s;
+}
+
+nav ul li a:hover{
+    color: #6c696e;
+}
+
+section:not(#home) {
+    padding: 100px 20px; /*distância entre o conteúdo e as bordas*/
+    text-align: center; /*alinhar o texto no centro da página*/
+    display: flex; /*???????*/
+    justify-content: center; /**/
+    align-items: center;
+    height: 100vh;
+}
+
+footer{
+    text-align: center;
+    background-color: #9c9a9a;
+}
+
+#home {
+    /*background-color:#4A90E2*/
+    background-image: url(https://puls-img.chanel.com/c_limit,w_1600/q_auto:good,dpr_auto,f_auto/1666691173353-aow2022wrapclassic1300x1102jpg_1102x1300.jpg);
+    background-size: cover; /*ajustou a cor*/
+    background-repeat: no-repeat; /*não repetiu a imagem*/
+    color: #000000;
+    height: 100vh; /*altura da imagem*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.content .text{
+    max-width: 600px;
+    text-align: left;
+}
+
+.content .text h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0c0b0e;
+}
+
+.content .text p{
+    font-size: 1.1em;
+    color: #141414;
+}
+
+#services{
+    background-color: #ffffff;
+}
+
+#about{
+    background-color: #00000004;
+}
+
+#contact{
+    background-color: #ffffff;
+}
+
+.cta-button{
+    margin-top: 30px;
+    background-color: #ffffff;
+    color: #020202;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px  rgba(67, 33, 90, 0.1) ;
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+.cta-button:hover{
+    box-shadow:  0px 1px 3px #19191a;
+}
+
